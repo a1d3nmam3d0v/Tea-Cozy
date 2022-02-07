@@ -1,0 +1,150 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 22px;
+	font-family: Helvetica;
+	color: seashell;
+	background-color: black;
+	opacity: 0.9;
+}
+
+img {
+	max-width: 100%;
+}
+
+header {
+	height: 69px;
+	width: 100%;
+	position: fixed;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	background-color: black;
+	border-bottom: 1px solid seashell;
+	z-index: 69;
+}
+
+#logo {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	display: flex;
+	/* flex-shrink: 8; */
+}
+
+#logo img {
+	height: 50px;
+}
+
+nav ul {
+	margin: 10px;
+	padding: 5px;
+	/* display: inline-flex; */
+}
+
+nav ul li {
+	display: inline-flex;
+	margin: 4px;
+	/* display: flex; */
+}
+
+nav ul li a {
+	margin-left: 10px;
+	color: white;
+	font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 580px) {
+	html {
+		font-size: 0.9rem;
+	}
+
+	nav ul li {
+		display: flex;
+	}
+
+	nav ul li a {
+		font-size: 0.85rem;
+	}
+
+	#logo img {
+		height: 50px;
+	}
+}
+
+#mission {
+	background-image: url('images/mission-background.png');
+	background-size: cover;
+	background-position: center;
+	height: 700px;
+	width: 85%;
+	position: relative;
+	top: 64px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	/* margin-bottom:30px; */
+	/* flex-shrink: 8; */
+}
+
+.statement {
+	background-color: black;
+	width: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* flex-grow: 2; */
+	/* flex-shrink: 1; */
+	display: flex;
+	/* flex-shrink: 2; */
+}
+
+h2 {
+	padding: 5px;
+	text-align: center;
+}
+
+h4 {
+	padding: 5px;
+	text-align: center;
+}
+
+#totm {
+	position: relative;
+	top: 80px;
+	/* margin-top: 80px; */
+	/* padding-top:40px; */
+	text-align: center;
+	max-width: 1000px;
+	/* display:inline; */
+	margin: 0 auto;
+	
+}
+
+.featured-teas {
+	/* margin: 0 auto; */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	        flex-direction: row-reverse;
+
+}
+
+.tea {
+	margin: 15px;
+}
+/* .tea img {
+	width: 300px;
+	height: 200px;
+} */
+
+/* @media only screen and (max-width: 480px) {
+	.mission {
+		background-size: contain;
+	}
+} */

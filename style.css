@@ -8,11 +8,11 @@ SETUP  */
 
 html {
 	font-size: 22px;
+	text-align: center;
 	font-family: Helvetica;
 	color: seashell;
 	background-color: black;
-	text-align: center;
-	opacity: .9;
+	opacity: 0.9;
 }
 
 ul {
@@ -32,23 +32,23 @@ VIEWPORT */
 AND NAV */
 
 header {
-	height: 69px;
-	width: 100%;
 	position: fixed;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+	z-index: 69;
+	height: 69px;
+	width: 100%;
 	background-color: black;
 	border-bottom: 1px solid seashell;
-	z-index: 69;
 }
 
 #logo {
 	position: absolute;
-	left: 10px;
 	top: 10px;
-	display: flex;
+	left: 10px;
 	height: 50px;
+	display: flex;
 }
 
 nav ul {
@@ -57,8 +57,8 @@ nav ul {
 }
 
 nav ul li {
-	display: inline-flex;
 	margin: 4px;
+	display: inline-flex;
 }
 
 nav a {
@@ -70,45 +70,45 @@ nav a {
 SECTION */
 
 #mission {
+	position: relative;
+	top: 64px;
+	display: flex;
 	background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg');
 	background-size: cover;
 	background-position: center;
 	height: 700px;
 	max-width: 1200px;
-	position: relative;
-	top: 64px;
 	margin: 0 auto;
-	display: flex;
 	align-items: center;
 }
 
 .statement {
-	background-color: black;
+	padding: 15px;
 	width: 100%;
-	text-align: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding: 15px;
+	text-align: center;
+	background-color: black;
 }
 
 /* TEA OF THE 
 MONTH SECTION */
 
 #totm {
-	text-align: center;
-	max-width: 1000px;
-	margin: 0 auto;
-	padding: 80px 0 40px;
 	position: relative;
 	top: 30px;
+	margin: 0 auto;
+	padding: 80px 0 40px;
+	max-width: 1000px;
+	text-align: center;
 }
 
 .featured-teas {
-	display: flex;
-	justify-content: center;
-	flex-flow: wrap row;
 	margin-top: 15px;
+	display: flex;
+	flex-flow: wrap row;
+	justify-content: center;
 }
 
 .tea {
@@ -128,36 +128,36 @@ figcaption {
 SECTION */
 
 #locations {
+	position: relative;
+	top: 30px;
 	height: 500px;
-	max-width: 1200px;
 	margin: 0 auto;
 	padding-top: 85px;
+	max-width: 1200px;
 	background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	position: relative;
-	top: 30px;
 }
 
 .addresses {
-	max-width: 980px;
-	justify-content: center;
-	display: flex;
 	margin: auto;
+	max-width: 980px;
+	display: flex;
+	justify-content: center;
 }
 
 .location {
-	background-color: black;
-	opacity: 1;
+	margin: 15px;
+	padding: 20px;
 	height: 250px;
 	width: 250px;
-	align-content: center;
-	flex-direction: column;
-	padding: 20px;
-	margin: 15px;
-	align-items: center;
-	justify-content: space-around;
 	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-content: center;
+	align-items: center;
+	background-color: black;
+	opacity: 1;
 }
 
 .location p {
@@ -168,20 +168,20 @@ SECTION */
 SECTION */
 
 #contact {
-	height: 200px;
 	position: relative;
 	top: 30px;
+	padding-bottom: 60px;
+	height: 200px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
-	padding-bottom: 60px;
 }
 
 /* PAGE
 FOOTER */
 
 footer {
-	text-align: left;
 	margin-left: 20px;
+	text-align: left;
 	font-size: 0.75rem;
 }
